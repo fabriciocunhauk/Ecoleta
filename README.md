@@ -1,6 +1,8 @@
-<p align="center">
+<p align="center" style="width: 60px height: 60px">
   <img src="https://github.com/vitorserrano/ecoleta/raw/master/.github/logo.png">
 </p>
+
+
 
 🔖 Sobre
 O Ecoleta é um marketplace de coleta de resíduos.
