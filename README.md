@@ -1,4 +1,4 @@
-<p align="center" style="width: 60px height: 60px">
+<p align="center">
   <img src="https://github.com/vitorserrano/ecoleta/raw/master/.github/logo.png">
 </p>
 
