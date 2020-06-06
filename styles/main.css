@@ -3,7 +3,8 @@
 
 :root {
     --title-color: #322153;
-    --primary-color: #34cb69
+    --primary-color: #34cb69;
+    --bk-color: #f0f0f5;
 }
 
 * {
