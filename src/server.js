@@ -95,8 +95,6 @@ server.get('/search', (req, res) => {
         // Mostrar a pagina HTML com os dados do banco de dados
         return res.render("search-results.html", { places: rows, total: total })
     })
-
-
 })
 
 server.listen(3000, () => console.log("Server started on port 3000"))
