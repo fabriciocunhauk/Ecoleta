@@ -3,7 +3,7 @@
 {% set pageId = "page-create-point" %}
 
 {% block title %}
-<title>Criar um ponto de coleta</title>
+<title>Create a colection point</title>
 {% endblock title %}
 
 {% block styles %}
@@ -15,50 +15,50 @@
 {% include "partials/page-headers.html" %}
 
 <form action="/savepoint" method="POST">
-    <h1>Cadastre um ponto de coleta</h1>
+    <h1>Register a collection point</h1>
 
     <fieldset>
         <legend>
-            <h2>Dados da entidade</h2>
+            <h2>Entity data</h2>
         </legend>
 
         <div class="field-group">
             <div class="field">
-                <label for="name">Nome da entidade</label>
+                <label for="name">Entity name</label>
                 <input type="text" name="name" required>
             </div>
             <div class="field">
-                <label for="name">Imagem da entidade</label>
+                <label for="name">Entity image</label>
                 <input type="url" name="image" placeholder="http://" required>
             </div>
         </div>
 
         <div class="field-group">
             <div class="field">
-                <label for="address">Endereco</label>
+                <label for="address">Address</label>
                 <input type="text" name="address" required>
             </div>
 
             <div class="field">
-                <label class="address2">Numero/Complemento</label>
+                <label class="address2">Number</label>
                 <input type="text" name="address2" required>
             </div>
         </div>
 
         <div class="field-group">
             <div class="field">
-                <label class="state">Estado</label>
+                <label class="state">State</label>
                 <select name="uf" required>
-                    <option value="">Selecione o Estado</option>
+                    <option value="">Select a state</option>
                 </select>
 
                 <input type="hidden" name="state">
             </div>
 
             <div class="field">
-                <label class="city">Cidade</label>
+                <label class="city">City</label>
                 <select name="city" disabled required>
-                    <option value="">Selecione a Cidade</option>
+                    <option value="">Select City</option>
                 </select>
             </div>
         </div>
@@ -67,39 +67,39 @@
 
     <fieldset>
         <legend>
-            <h2>Items de coleta</h2>
-            <span>Selecione um ou mais itens abaixo</span>
+            <h2>Collection items</h2>
+            <span>Select item/s</span>
         </legend>
 
         <div class="items-grid">
             <li data-id="Lampadas">
                 <img src="/assets/lampadas.svg" alt="Lampadas">
-                <span>Lampadas</span>
+                <span>Light bulbs</span>
             </li>
 
             <li data-id="Pilhas e baterias">
                 <img src="/assets/baterias.svg" alt="Pilhas e baterias">
-                <span>Pilhas e baterias</span>
+                <span>Batteries</span>
             </li>
 
             <li data-id="Papeis e Papelao">
                 <img src="/assets/papeis-papelao.svg" alt="Papeis e Papelao">
-                <span>Papeis e Papelao</span>
+                <span>Paper</span>
             </li>
 
             <li data-id="Residuos Eletronicos">
                 <img src="/assets/eletronicos.svg" alt="Residuos Eletronicos">
-                <span>Residuos Eletronicos</span>
+                <span>Electronics</span>
             </li>
 
             <li data-id="Residuos Organicos">
                 <img src="/assets/organicos.svg" alt="Residuos Organicos">
-                <span>Residuos Organicos</span>
+                <span>Organics</span>
             </li>
 
             <li data-id="Oleo de Cozinha">
                 <img src="/assets/oleo.svg" alt="Oleo de Cozinha">
-                <span>Oleo de Cozinha</span>
+                <span>Oil</span>
             </li>
         </div>
 
@@ -107,7 +107,7 @@
 
     </fieldset>
 
-    <button type="submit">Cadastrar ponto de coleta</button>
+    <button type="submit">Register Collection Point</button>
 
 </form>
 
